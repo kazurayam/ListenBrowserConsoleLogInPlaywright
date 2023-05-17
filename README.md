@@ -13,7 +13,7 @@ I made a Playwright project to demonstrate how my Typescript code can listen the
 
 On Mac, we need Homebrew. Follow the instruction in the home page.
 
-- [Homebrew / Install Homebrew]
+- [Homebrew / Install Homebrew](https://brew.sh/)
 
 Need to install Node. NPM (Node Package Manager) will be installed together.
 
