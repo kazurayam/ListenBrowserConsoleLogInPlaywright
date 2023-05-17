@@ -39,7 +39,7 @@ You can see the report by
 $ npx playwright show-report
 ```
 
-You can execute test in VSCode
+You can execute test in VSCode by GUI operation as well.
 
 https://playwright.dev/docs/getting-started-vscode
 
