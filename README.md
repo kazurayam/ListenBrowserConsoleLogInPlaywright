@@ -52,7 +52,7 @@ In VSCode, I opened it with text editor.
 
 Near to m ytest function、a link labled with a text `▷ Execute Playwright Test` is displayed. I clicked it. Then the test was executed.
 
-I[executed]()
+![executed](https://kazurayam.github.io/istenBrowserConsoleLogInPlaywright/images/Execute%20Playwright%20Test.png)
 
 In the Terminal, a `npx playwright test xxxx` command was echoed, and executed. The command showed a text `2023/5/17 11:42:36`, which was originally written by a Javascript on the target web page into the javascript console. Playwrite transfered the text into my Typescript. My Typescript had a line:
 
