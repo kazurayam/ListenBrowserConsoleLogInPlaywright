@@ -1,4 +1,6 @@
-# Listening to Console log of Chrome browser in Playwright
+# Listening Console log of browser in Playwright
+
+I made a Playwright project to demonstrate how my Typescript code can listen the Console log of browser.
 
 ## Preparation
 
@@ -50,18 +52,20 @@ I wrote a Typescript script which uses Playwright API.
 
 In VSCode, I opened it with text editor.
 
-Near to m ytest function、a link labled with a text `▷ Execute Playwright Test` is displayed. I clicked it. Then the test was executed.
+Near to my test function、a link labeled with a text `▷ Execute Playwright Test` is displayed. I clicked it. Then the test was executed.
 
 ![executed](https://kazurayam.github.io/ListenBrowserConsoleLogInPlaywright/images/Execute%20Playwright%20Test.png)
 
-In the Terminal, a `npx playwright test xxxx` command was echoed, and executed. The command showed a text `2023/5/17 11:42:36`, which was originally written by a Javascript on the target web page into the javascript console. Playwrite transfered the text into my Typescript. My Typescript had a line:
+In the Terminal, I could see a `npx playwright test xxxx` command was echoed and executed. The command showed a text `2023/5/17 11:42:36`.
+
+The text was originally written by a Javascript on the target web page into the javascript console. Playwright transferred the text into my Typescript. My Typescript had a line:
 
 ```
   // Listen for all console logs
   page.on('console', msg => console.log(msg.text()))
 ```
 
-So the message was displayed in the Terminal window on VSCode.
+So the message was displayed in the Terminal window on VSCode on my mac.
 
 That's all I've done.
 
