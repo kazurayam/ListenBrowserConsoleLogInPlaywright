@@ -27,7 +27,7 @@ Need to install Playwright.
 $ npm init playwright@latest
 ```
 
-In the project directory, a file `Tests-examples/demo-todo-app.spec.ts` will be created. You can execute by the following command:
+In the project directory, a set of sample test scripts will be generated . You can execute tests by the following command:
 
 ```
 $ npx playwright test
