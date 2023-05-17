@@ -4,10 +4,11 @@ test.beforeEach (async ({ page }) => {
   // Listen for all console logs
   page.on('console', msg => console.log(msg.text()))
   // Listen for all console events and handle errors
-  //page.on('console', msg => {
-  //  if (msg.type() === 'error')
-  //    console.log(`Error text: "${msg.text()}"`);
-  //});
+  page.on('console', msg => {
+    if (msg.type() === 'error')
+      console.log(`Error text: "${msg.text()}"`);
+  });
+  // Load the page
   await page.goto('http://demoaut-mimic.kazurayam.com/');
 });
 
